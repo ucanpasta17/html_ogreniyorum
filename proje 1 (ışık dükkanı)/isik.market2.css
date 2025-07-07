@@ -1,0 +1,124 @@
+/* Genel Stil */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #fdfdfd;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Bölümü */
+header {
+    background-color: #004466;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header.ailesi img {
+    max-width: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.slogan {
+    font-size: 1.3rem;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.navigasyon li {
+    display: inline-block;
+    margin: 10px;
+    font-weight: bold;
+    color: #eee;
+    list-style: none;
+}
+
+/* Ana Ürün Alanı */
+.ürün.yelpazesi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 30px;
+}
+
+.ürün.yelpazesi img {
+    max-width: 300px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+.ürün.yelpazesi img:hover {
+    transform: scale(1.05);
+}
+
+.urun.aciklamasi {
+    max-width: 600px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-left: 6px solid #004466;
+    border-radius: 8px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #004466;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #006699;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #eee;
+    padding: 40px 20px;
+    font-size: 1rem;
+    color: #444;
+}
+
+.biz-kimiz-stil h2 {
+    margin-bottom: 20px;
+    color: #004466;
+}
+
+address {
+    font-style: normal;
+    margin-top: 10px;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .ürün.yelpazesi {
+        padding: 20px;
+    }
+
+    .ürün.yelpazesi img {
+        max-width: 100%;
+    }
+
+    .urun.aciklamasi {
+        width: 100%;
+    }
+
+    .navigasyon li {
+        display: block;
+        margin: 5px 0;
+    }
+}
